@@ -1,6 +1,10 @@
 import { combineReducers } from 'redux';
-import { todoReducer } from './todoReducer';
+import albumsReducer from './albums';
+import artistsReducer from './artists';
+import playlistReducer from './playlist';
 
 export const reducer = combineReducers({
-  todos: todoReducer
+  albums: albumsReducer,
+  artists: artistsReducer,
+  playlist: playlistReducer
 })

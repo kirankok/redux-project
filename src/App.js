@@ -1,12 +1,10 @@
 import './App.css';
-import AddTodo from './components/AddTodo/AddTodo';
-import TodoList from './components/TodoList/TodoList';
+import AppRouter from './router/AppRouter';
 
 function App() {
   return (
     <div className="App">
-      <AddTodo />
-      <TodoList />
+      <AppRouter />
     </div>
   );
 }
