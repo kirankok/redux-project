@@ -1,12 +1,7 @@
 import { combineReducers } from 'redux';
-import { counterReducer } from './counterReducer';
+import { productReducer } from './productsReducer';
 
 export const reducer = combineReducers({
-  counter: counterReducer
+  products: productReducer
 })
 
-// const combineReducers =  (reducer) => {
-//  return {
-//    reducer
-// }
-// }
