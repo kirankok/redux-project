@@ -1,8 +1,7 @@
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Dashboard from './components/Dashboard/Dashboard';
-import NavBar from './components/NavBar/NavBar';
+import NavBar from './components/NavBar';
 import NoMatch from './components/NoMatch';
-
+import RandomQuote from './components/RandomQuote/RandomQuote';
 
 export const AppRoutes = () => {
 
@@ -10,7 +9,7 @@ export const AppRoutes = () => {
     <BrowserRouter>
       <NavBar />
       <Switch>
-        <Route exact path='/' component={Dashboard} />
+        <Route path={'/'} exact component={RandomQuote} />
         <Route path="*" component={NoMatch} />
       </Switch>
     </BrowserRouter>

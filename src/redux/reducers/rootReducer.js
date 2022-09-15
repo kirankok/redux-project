@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux';
-import { productReducer } from './productsReducer';
+import { randomQuoteReducer } from './randomQuoteReducer';
 
 export const reducer = combineReducers({
-  products: productReducer
+  randomQuote: randomQuoteReducer
 })
 
